@@ -6,6 +6,7 @@ app.use(express.json())
 const PORT = process.env.PORT || 3000
 
 app.post('/login', (req, res) => {
+    console.log("hola")
     const { username, password } = req.body
 
     if (username === 'admin' && password === '1234') {
